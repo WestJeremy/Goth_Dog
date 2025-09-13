@@ -1,0 +1,11 @@
+{
+	"name": "Python Dev Environment",
+	"build": {
+	  "dockerfile": "Dockerfile"
+	},
+	// "workspaceFolder": "/workspace",
+	"extensions": [
+	  "ms-python.python",
+	  "ms-toolsai.jupyter
+	]
+  }
