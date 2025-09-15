@@ -14,6 +14,8 @@ import math
 from dataclasses import dataclass
 from typing import List, Dict, Tuple, Optional
 
+import sv_ttk
+
 
 @dataclass
 class Link:
@@ -798,6 +800,9 @@ def main():
     if args.urdf_file:
         app.after(100, lambda: app.open_urdf_from_path(args.urdf_file))
     
+
+    # This is where the magic happens
+    sv_ttk.set_theme("dark")
     app.mainloop()
 
 
